@@ -5,7 +5,7 @@ This is my clone of a simple and well-known classic game of Tic-Tac-Toe
 
 Compiling
 ---------
-For compiling you will need a compiler supporting C++14.
+For compiling you will need a compiler supporting C++14.\
 You will also need the following libraries:
 - glfw
 - glad
