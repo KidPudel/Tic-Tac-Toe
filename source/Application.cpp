@@ -292,6 +292,7 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 void mouse_movement_callback(GLFWwindow* window, double xPos, double yPos)
 {
 	// track current position
+	// divided by (WIDTH/2) or (HEIGHT/2) to adjust tracking positions
 	position = glm::vec3(static_cast<float>(xPos - (WIDTH / 2)) / (WIDTH / 2), static_cast<float>((HEIGHT / 2) - yPos) / (WIDTH / 2), 0.0f);
 }
 
