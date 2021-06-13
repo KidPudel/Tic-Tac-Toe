@@ -309,10 +309,7 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 				// Position has already been using (this cell/square is filled)
 				// !! But there is no need to check for 0 value (when checking... if u_map[key] == value, value 0 is automatically filled to the place with key)
 				if (Position_Cache.find(&adjusted_positions[i]) != Position_Cache.end() && Position_Cache[&adjusted_positions[i]] != 0)
-				{
-					std::cout << i << std::endl;
 					break;
-				}
 				new_position = adjusted_positions[i];
 				if (click_count % 2 == 0 || click_count == 0)  // cross
 					Position_Cache[&adjusted_positions[i]] = click_count + 2;  // +2 to exclude 0
