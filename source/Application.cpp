@@ -334,9 +334,6 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 			last_position = new_position;
 			translation_matrix = glm::translate(translation_matrix, delta_position);
 			positions_of_figures.push_back(translation_matrix);
-			// draw
-			if (positions_of_figures.size() == 9 && win == false)
-				std::cout << "Draw" << std::endl;
 		}
 	}
 }
